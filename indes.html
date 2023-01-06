@@ -1,12 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3846/3846805.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 <body>
-    
+    <!--Estructura-->
+    <div class="container-fluid">
+        <div class="row mx-auto">
+            <!--#################################################################################-->
+            <!--columna de datos personales (LA PARTE IZQ)-->
+            <!--#################################################################################-->
+            <div class="col-sm-3 p-0 m-2" id="ladoizq">
+                <div>
+                    <!--Imagen-->
+                    <center><div class="avatar" style="background-image: url(https://randomuser.me/api/portraits/men/39.jpg)"></div></center>
+                    <!--Datos Personales-->
+                    <div class="bg-primary m" id="datosPersonales">
+                        <ul class="text-light">
+                            <li>Nombre: Ethan Collins</li>
+                            <li>Gmail: ethan.collins@example.com</li>
+                            <li id="cumpleaños">Edad: </li>
+                            <li>Telefono: (207) 737-5880</li>
+                        </ul>
+                    </div>
+                    <!--punteros-->
+                    <div class="m-4">
+                        <P class="text-light">Ver:</P>
+                        <div id="referencias">
+                            <div><a href="#Estudios"><span class="text-light">Estudios:</span></a></div>
+                            <div><a href="#Habilidades"><span class="text-light">Habilidades:</span></a></div>
+                            <div><a href="#Intereces"><span class="text-light">Intereces:</span></a></div>
+                            <div><a href="#Experiencia"><span class="text-light">Experiencia:</span></a></div>
+                            <div><a href="#DatosAdicionales"><span class="text-light">DatosAdicionales:</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#################################################################################-->
+            <!--Columna de datos de trabajo (LA PARTE DERECHA)-->
+            <!--#################################################################################-->
+            <div class="col-sm-8">
+                <!--Titulo-->
+                <div class="mt-2">
+                    <h1 class="text-center">Ethan Collins</h1>
+                </div>
+                 <!-------------------------------------------------------------------------------->
+                <!--Espacio Estudio-->
+                 <!-------------------------------------------------------------------------------->
+                <a name="Estudios"></a>
+                <div class="mt-5">
+                    <div>
+                        <h4>Estudio:</h4>
+                    </div>
+                    <div>
+                        <ul class="fs-4 informacion">
+                            <li class="li_datos">Titulo de Ingenieria en software: Universidad Nacional De San Luis</li>
+                            <li class="li_datos">Curso de marketing: CoderHouse</li>
+                            <li class="li_datos">Curso de Ingles: Platzi</li>
+                            <li class="li_datos">Curso de desarrolo web: Argentina Programa</li>
+                            <li class="li_datos">Profesorado de informatica: UTN regional Cordoba</li>
+                        </ul>
+                        <input class="btn btn-primary float-end" id="btnvermas1" type="button" value="Ver Mas">
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------->
+                <!--Espacio Estudio VER MAS-->
+                 <!-------------------------------------------------------------------------------->
+                 <div id ="vermas1" class="fs-4 informacion">
+                    <ul class="mt-0">
+                        <li class="li_datos">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li class="li_datos">Duis facilisis dictum nibh at commodo</li>
+                        <li class="li_datos">Aliquam rutrum elementum felis, vel condimentum mauris aliquam quis</li>
+                        <li class="li_datos">Donec in lorem in ligula ornare lacinia ac vel ligula.</li>
+                        <li class="li_datos">Cras suscipit quis arcu quis iaculis</li>
+                        <li class="li_datos">Praesent vestibulum mollis ipsum iaculis ultricies</li>
+                        <li class="li_datos">uisque placerat placerat nisi, eu volutpat lorem maximus ac</li>
+                        <li class="li_datos">Nullam vitae nunc a augue faucibus rhoncus</li>
+                        <li class="li_datos">in venenatis sem ante sit amet dolor</li>
+                        <li class="li_datos">onec aliquet a est vestibulum mollis</li>
+                    </ul>
+                    <input class="btn btn-primary float-end" id="btnvermenos1" type="button" value="Ver Menos">
+                </div>
+                <!--Separador-->
+                <div class="separador"></div>
+                 <!-------------------------------------------------------------------------------->
+                <!--Espacio habilidades-->
+                 <!-------------------------------------------------------------------------------->
+                 <a name="habilidades"></a>
+                 <div class="mt-4">
+                    <div>
+                        <h4>Habilidades:</h4>
+                    </div>
+                    <div>
+                        <ul class="fs-4 informacion">
+                            <li class="li_datos">Manejo de VisualStudioCode</li>
+                            <li class="li_datos">Manejo de VisualStudio</li>
+                            <li class="li_datos">Manejo de python</li>
+                            <li class="li_datos">Manejo de prolog</li>
+                            <a name="Intereces"></a>
+                            <li class="li_datos">manejo de Smalltalk</li>
+                        </ul>
+                        <input class="btn btn-primary float-end" id="btnvermas2" type="button" value="Ver Mas">
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------->
+                <!--Espacio habilidades VER MAS-->
+                 <!-------------------------------------------------------------------------------->
+                 <div id ="vermas2" class="fs-4 informacion">
+                    <ul>
+                        <li class="li_datos">Nunc dapibus, quam ut luctus auctor, augue erat egestas velit</li>
+                        <li class="li_datos">Nullam eu nunc libero. Morbi in iaculis risus</li>
+                        <li class="li_datos">Suspendisse potenti. Nulla lacinia, diam ac pulvinar convallis</li>
+                        <li class="li_datos">Quisque eu libero a turpis venenatis elementum a ac nulla</li>
+                        <li class="li_datos">interdum lectus id est pretium, id ultrices nunc rutrum. </li>
+                        <li class="li_datos">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li class="li_datos">Quisque vestibulum orci sit amet ligula mollis consectetur</li>
+                        <li class="li_datos">Nullam metus turpis, lobortis nec bibendum sed</li>
+                        <li class="li_datos">Aliquam id nulla tincidunt orci rhoncus eleifend</li>
+                        <li class="li_datos">Phasellus leo turpis, suscipit sed orci sed</li>
+                    </ul>
+                    <input class="btn btn-primary float-end" type="button" id= "btnvermenos2" value="Ver Menos">
+                </div>
+                <!--Separador-->
+                <div class="separador"></div>
+                 <!-------------------------------------------------------------------------------->
+                <!--Espacio Intereses-->
+                 <!-------------------------------------------------------------------------------->
+                 <div class="mt-4">
+                    <div>
+                        <h4>Intereses:</h4>
+                    </div>
+                    <div>
+                        <ul class="fs-4 informacion">
+                            <li class="li_datos">Trabajo de 4 horas</li>
+                            <li class="li_datos">Trabajo desde casa a distancia</li>
+                            <li class="li_datos">Trabajo en desarrollador web</li>
+                            <li class="li_datos">Trabajo en equipo</li>
+                            <li class="li_datos">Trabajo no tan pesado</li>
+                        </ul>
+                        <input class="btn btn-primary float-end" id="btnvermas3" type="button" value="Ver Mas">
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------->
+                <!--Espacio Intereses VER MAS-->
+                 <!-------------------------------------------------------------------------------->
+                 <div id ="vermas3" class="fs-4 informacion">
+                    <ul>
+                        <li class="li_datos">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li class="li_datos">Quisque vestibulum orci sit amet ligula mollis consectetur</li>
+                        <li class="li_datos">Nullam metus turpis, lobortis nec bibendum sed</li>
+                        <li class="li_datos">Aliquam id nulla tincidunt orci rhoncus eleifend</li>
+                        <li class="li_datos">Phasellus leo turpis, suscipit sed orci sed</li>
+                        <li class="li_datos">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li class="li_datos">Duis facilisis dictum nibh at commodo</li>
+                        <li class="li_datos">Aliquam rutrum elementum felis, vel condimentum mauris aliquam quis</li>
+                        <li class="li_datos">Donec in lorem in ligula ornare lacinia ac vel ligula.</li>
+                        <li class="li_datos">Cras suscipit quis arcu quis iaculis</li>
+                    </ul>
+                    <input class="btn btn-primary float-end" id="btnvermenos3" type="button" value="Ver Menos">
+                </div>
+                <!--Separador-->
+                <div class="separador"></div>
+                <!-------------------------------------------------------------------------------->
+                <!--Espacio Experiencia-->
+                 <!-------------------------------------------------------------------------------->
+                 <a name="Experiencia"></a>
+                 <div class="mt-4">
+                    <div>
+                        <h4>Experiencia:</h4>
+                    </div>
+                    <div>
+                        <ul class="fs-4 informacion">
+                            <li class="li_datos">Desarrollo de apliacciones: App Design.4 años</li>
+                            <li class="li_datos">Desarrollo de apliacciones: Cubix.1 Año</li>
+                            <li class="li_datos">Administrador de base de datos: Dabasystem.3 Años</li>
+                            <li class="li_datos">Desarrolo de apliacciones: Fuelled.2 Años</li>
+                            <li class="li_datos">Area de marqueting: Qode.1Año</li>
+                        </ul>
+                        <input class="btn btn-primary float-end" id="btnvermas4" type="button" value="Ver Mas">
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------->
+                <!--Espacio Experiencia VER MAS-->
+                 <!-------------------------------------------------------------------------------->
+                 <div id ="vermas4" class="fs-4 informacion">
+                    <ul>
+                        <li class="li_datos">Aliquam id nulla tincidunt orci rhoncus eleifend</li>
+                        <li class="li_datos">Phasellus leo turpis, suscipit sed orci sed</li>
+                        <li class="li_datos">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li class="li_datos">Duis facilisis dictum nibh at commodo</li>
+                        <li class="li_datos">Aliquam rutrum elementum felis, vel condimentum mauris aliquam quis</li>
+                        <li class="li_datos">Suspendisse potenti. Nulla lacinia, diam ac pulvinar convallis</li>
+                        <li class="li_datos">Quisque eu libero a turpis venenatis elementum a ac nulla</li>
+                        <li class="li_datos">interdum lectus id est pretium, id ultrices nunc rutrum. </li>
+                        <li class="li_datos">Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li class="li_datos">Quisque vestibulum orci sit amet ligula mollis consectetur</li>
+                    </ul>
+                    <input class="btn btn-primary float-end" id="btnvermenos4" type="button" value="Ver Menos">
+                </div>
+                <!--Separador-->
+                <div class="separador"></div>
+                <!-------------------------------------------------------------------------------->
+                <!--Datos Adicionales-->
+                 <!-------------------------------------------------------------------------------->
+                 <a name="DatosAdicionales"></a>
+                 <div class="mt-4">
+                    <div>
+                        <h4>Datos Adicionales:</h4>
+                    </div>
+                    <div>
+                        <p class="fs-4 informacion">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <input class="btn btn-primary float-end" id="btnvermas5" type="button" value="Ver Mas">
+                    </div>
+                </div>
+                <!-------------------------------------------------------------------------------->
+                <!--Datos Adicionales VER MAS-->
+                 <!-------------------------------------------------------------------------------->
+                 <div id="vermas5" class="fs-4 informacion">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                    <input class="btn btn-primary float-end" id="btnvermenos5" type="button" value="Ver Menos">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Funcionalidad de bootstrap e importada-->
+    <script src="./funcionalidad/funcionalidad.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
